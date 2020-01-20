@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Copy for performances and workshops.
 - Copy for teachers.
 - Copy for classes.
+- Theme colour.
 
 ## [0.0.1] - 2020-01-20
 
