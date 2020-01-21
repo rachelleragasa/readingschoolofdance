@@ -192,8 +192,8 @@ body {
   background-color: #000;
   background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url("../../images/81053936-IMG_9137.jpg");
   background-size: auto, cover;
@@ -223,54 +223,9 @@ select,
 textarea {
   color: #ffffff;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 16.5pt;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.65;
-}
-
-@media screen and (max-width: 1680px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 13pt;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body,
-  input,
-  select,
-  textarea {
-    font-size: 12pt;
-  }
 }
 
 a {
@@ -394,7 +349,20 @@ h4.major,
 h5.major,
 h6.major {
   padding-bottom: 1em;
-  border-bottom: solid 2px #b1963e;
+  border-bottom: solid 5px #b1963e;
+}
+
+.wrapper.spotlight.style2 .inner .content h2.major,
+.wrapper.spotlight.style4 .inner .content h2.major {
+  border-bottom: solid 5px #fff;
+}
+
+.wrapper.spotlight.style2 .inner .content a:before {
+  border: solid 2px #fff;
+}
+
+.wrapper.spotlight.style2 .inner .content a.special:not(.button):before {
+  color: #fff;
 }
 
 h2 {
@@ -3196,18 +3164,10 @@ button:disabled,
 
 #header nav a:before {
   float: right;
-  margin-left: 0.75em;
 }
 
 #header nav a[href="#menu"] {
   text-decoration: none;
-  -moz-transition: background-color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
-  border-radius: 5px;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-  padding: 0 1.35em;
 }
 
 #header nav a[href="#menu"]:before {
@@ -3221,6 +3181,8 @@ button:disabled,
 
 #header nav a[href="#menu"]:before {
   content: "\f0c9";
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 #header nav a[href="#menu"]:hover {
@@ -3322,7 +3284,7 @@ button:disabled,
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: rgba(46, 49, 65, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   cursor: default;
   height: 100%;
   left: 0;
@@ -3529,19 +3491,26 @@ body.is-menu-visible #menu .inner {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 2560px) {
+  #banner {
+    min-height: 900px;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0;
     background-color: #000;
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
       ),
       url("../../images/81053936-IMG_9137.jpg");
     background-size: auto, cover;
     background-position: center, center;
     margin-bottom: -6.5em;
+    min-height: 800px;
   }
 }
 
@@ -3549,6 +3518,7 @@ body.is-menu-visible #menu .inner {
   #banner {
     padding: 12em 3em 12.375em 3em;
     margin-bottom: -4.75em;
+    min-height: 700px;
   }
 
   #banner .inner {
@@ -3560,6 +3530,7 @@ body.is-menu-visible #menu .inner {
   #banner {
     padding: 5em 2em 4.25em 2em;
     margin-bottom: -2.5em;
+    min-height: 450px;
   }
 
   #banner .logo {
@@ -3708,7 +3679,7 @@ body.is-preload #banner p {
   background-size: 100% 100%;
   content: "";
   display: block;
-  height: 6.5em;
+  height: 6.6em;
   position: absolute;
   width: 100%;
 }
@@ -3838,7 +3809,7 @@ body.is-preload #banner p {
 
 .wrapper.spotlight:before,
 .wrapper.spotlight:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23000000%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight:before {
@@ -3895,21 +3866,22 @@ body.is-preload #banner p {
 }
 
 .wrapper.spotlight.style2 {
-  background-color: transparent;
+  background-color: #b1963e;
 }
 
 .wrapper.spotlight.style2:before,
 .wrapper.spotlight.style2:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23000000%3B' /%3E%3C/svg%3E");
-  opacity: 0;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23B1963E%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style2:before {
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 -1px 0 0 rgba(177, 150, 62, 0.8),
+    0 1px 0 0 rgba(177, 150, 62, 0.8);
 }
 
 .wrapper.spotlight.style2:after {
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.8), 0 1px 0 0 rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 -1px 0 0 rgba(177, 150, 62, 0.8),
+    0 1px 0 0 rgba(177, 150, 62, 0.8);
 }
 
 .wrapper.spotlight.style3 {
@@ -3918,7 +3890,7 @@ body.is-preload #banner p {
 
 .wrapper.spotlight.style3:before,
 .wrapper.spotlight.style3:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23000000%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style3:before {
@@ -3929,21 +3901,28 @@ body.is-preload #banner p {
   box-shadow: inset 0 -1px 0 0 #000, 0 1px 0 0 #000;
 }
 
+.wrapper.spotlight.style4 .inner iframe {
+  width: 100%;
+  margin: 0 3em 2em 0;
+}
+
 .wrapper.spotlight.style4 {
-  background-color: #39477c;
+  background-color: #b1963e;
 }
 
 .wrapper.spotlight.style4:before,
 .wrapper.spotlight.style4:after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2339477c%3B' /%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23B1963E%3B' /%3E%3C/svg%3E");
 }
 
 .wrapper.spotlight.style4:before {
-  box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
+  box-shadow: inset 0 -1px 0 0 rgba(177, 150, 62, 0.8),
+    0 1px 0 0 rgba(177, 150, 62, 0.8);
 }
 
 .wrapper.spotlight.style4:after {
-  box-shadow: inset 0 -1px 0 0 #39477c, 0 1px 0 0 #39477c;
+  box-shadow: inset 0 -1px 0 0 rgba(177, 150, 62, 0.8),
+    0 1px 0 0 rgba(177, 150, 62, 0.8);
 }
 
 .wrapper.spotlight.style5 {
@@ -3987,7 +3966,7 @@ body.is-preload #banner p {
 
   .wrapper:before,
   .wrapper:after {
-    height: 4.75em;
+    height: 4.8em;
   }
 
   .wrapper:before {
@@ -4021,7 +4000,7 @@ body.is-preload #banner p {
 
   .wrapper:before,
   .wrapper:after {
-    height: 2.5em;
+    height: 2.6em;
   }
 
   .wrapper:before {
@@ -4139,8 +4118,8 @@ body.is-preload #banner p {
     background-color: #000;
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
       ),
       url("../../images/81053936-IMG_9137.jpg");
     background-size: auto, cover;
@@ -4255,9 +4234,26 @@ body.is-preload #banner p {
 }
 
 /* Index */
-.logo {
-  max-width: 1000px;
-  width: 100%;
+.new-logo {
+  border-bottom: none;
+}
+
+.new-logo img {
+  width: 200px;
+  padding-top: 10px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 980px) {
+  .new-logo img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .new-logo img {
+    width: 100px;
+  }
 }
 
 /* Helpers */
