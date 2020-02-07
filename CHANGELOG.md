@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updating instagram handle.
 - Updating SEO title.
 - Reordering upcoming performances.
+- Reordering the addresses.
 
 ## [0.0.3] - 2020-01-21
 
